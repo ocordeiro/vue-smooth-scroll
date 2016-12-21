@@ -1,0 +1,21 @@
+{
+  "name": "vue-smooth-scroll",
+  "version": "1.0.3",
+  "description": "",
+  "main": "dist/vue-smooth-scroll.js",
+  "scripts": {
+    "build": "webpack --progress -p"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alamcordeiro/vue-smooth-scroll"
+  },
+  "author": "Alan Cordeiro",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-loader": "^6.2.10",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-core": "^6.21.0",
+    "webpack": "^1.14.0"
+  }
+}
