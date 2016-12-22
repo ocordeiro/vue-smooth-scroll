@@ -1,7 +1,7 @@
 {
   "name": "vue-smooth-scroll",
-  "version": "1.0.3",
-  "description": "",
+  "version": "1.0.7",
+  "description": "Simple vue smooth scroll",
   "main": "dist/vue-smooth-scroll.js",
   "scripts": {
     "build": "webpack --progress -p"

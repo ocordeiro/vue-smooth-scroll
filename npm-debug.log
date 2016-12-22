@@ -1,0 +1,113 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/Cellar/node/6.9.1/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'publish' ]
+2 info using npm@3.10.8
+3 info using node@v6.9.1
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   escapedName: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: '/Users/alan/Projetos/vue-smooth-scroll',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory /Users/alan/.npm/vue-smooth-scroll/1.0.6/package.tgz not in flight; packing
+9 verbose correctMkdir /Users/alan/.npm correctMkdir not in flight; initializing
+10 info lifecycle vue-smooth-scroll@1.0.6~prepublish: vue-smooth-scroll@1.0.6
+11 silly lifecycle vue-smooth-scroll@1.0.6~prepublish: no script for prepublish, continuing
+12 verbose tar pack [ '/Users/alan/.npm/vue-smooth-scroll/1.0.6/package.tgz',
+12 verbose tar pack   '/Users/alan/Projetos/vue-smooth-scroll' ]
+13 verbose tarball /Users/alan/.npm/vue-smooth-scroll/1.0.6/package.tgz
+14 verbose folder /Users/alan/Projetos/vue-smooth-scroll
+15 verbose addLocalTarball adding from inside cache /Users/alan/.npm/vue-smooth-scroll/1.0.6/package.tgz
+16 verbose correctMkdir /Users/alan/.npm correctMkdir not in flight; initializing
+17 silly cache afterAdd vue-smooth-scroll@1.0.6
+18 verbose afterAdd /Users/alan/.npm/vue-smooth-scroll/1.0.6/package/package.json not in flight; writing
+19 verbose correctMkdir /Users/alan/.npm correctMkdir not in flight; initializing
+20 verbose afterAdd /Users/alan/.npm/vue-smooth-scroll/1.0.6/package/package.json written
+21 silly publish { name: 'vue-smooth-scroll',
+21 silly publish   version: '1.0.6',
+21 silly publish   description: '> it&#x27;s based on vue-smoothscroll https://github.com/Teddy-Zhu/vue-smoothscroll/blob/master/README.md',
+21 silly publish   main: 'dist/vue-smooth-scroll.js',
+21 silly publish   scripts: { build: 'webpack --progress -p' },
+21 silly publish   repository:
+21 silly publish    { type: 'git',
+21 silly publish      url: 'git+https://github.com/alamcordeiro/vue-smooth-scroll.git' },
+21 silly publish   author: { name: 'Alan Cordeiro' },
+21 silly publish   license: 'MIT',
+21 silly publish   devDependencies:
+21 silly publish    { 'babel-loader': '^6.2.10',
+21 silly publish      'babel-preset-es2015': '^6.18.0',
+21 silly publish      'babel-core': '^6.21.0',
+21 silly publish      webpack: '^1.14.0' },
+21 silly publish   readme: '# Simple Vue Smooth Scroll\n\n> it&#x27;s based on vue-smoothscroll https://github.com/Teddy-Zhu/vue-smoothscroll/blob/master/README.md\n\n\n## Instalation\n``` bash\n# install dependency\nnpm install --save vue-smooth-scroll\n``` \n\n``` javascript\n// import on your project (872 bytes gziped)\nimport vueSmoothScroll from \'vue-smooth-scroll\'\nVue.use(vueSmoothScroll)\n```\n\n## Usage \n``` html\n<a href="#div-id" v-smooth-scroll>Anchor</a> \n<div id="div-id"></div> \n```\n',
+21 silly publish   readmeFilename: 'README.md',
+21 silly publish   gitHead: 'c8b52cf4bd27fdbb20f6003383d999574a9f9262',
+21 silly publish   bugs: { url: 'https://github.com/alamcordeiro/vue-smooth-scroll/issues' },
+21 silly publish   homepage: 'https://github.com/alamcordeiro/vue-smooth-scroll#readme',
+21 silly publish   _id: 'vue-smooth-scroll@1.0.6',
+21 silly publish   _shasum: '8d23d5bdf7e541a2fc97fe43a5bca6b7ab5a517d',
+21 silly publish   _from: '.' }
+22 verbose getPublishConfig undefined
+23 silly mapToRegistry name vue-smooth-scroll
+24 silly mapToRegistry using default registry
+25 silly mapToRegistry registry https://registry.npmjs.org/
+26 silly mapToRegistry data Result {
+26 silly mapToRegistry   raw: 'vue-smooth-scroll',
+26 silly mapToRegistry   scope: null,
+26 silly mapToRegistry   escapedName: 'vue-smooth-scroll',
+26 silly mapToRegistry   name: 'vue-smooth-scroll',
+26 silly mapToRegistry   rawSpec: '',
+26 silly mapToRegistry   spec: 'latest',
+26 silly mapToRegistry   type: 'tag' }
+27 silly mapToRegistry uri https://registry.npmjs.org/vue-smooth-scroll
+28 verbose publish registryBase https://registry.npmjs.org/
+29 silly publish uploading /Users/alan/.npm/vue-smooth-scroll/1.0.6/package.tgz
+30 verbose request uri https://registry.npmjs.org/vue-smooth-scroll
+31 verbose request sending authorization for write operation
+32 info attempt registry request try #1 at 12:41:50
+33 verbose request using bearer token for auth
+34 verbose request id 1450964a3c8f954b
+35 http request PUT https://registry.npmjs.org/vue-smooth-scroll
+36 http 403 https://registry.npmjs.org/vue-smooth-scroll
+37 verbose headers { 'content-type': 'application/json',
+37 verbose headers   'cache-control': 'max-age=300',
+37 verbose headers   'content-length': '95',
+37 verbose headers   'accept-ranges': 'bytes',
+37 verbose headers   date: 'Thu, 22 Dec 2016 17:41:53 GMT',
+37 verbose headers   via: '1.1 varnish',
+37 verbose headers   connection: 'keep-alive',
+37 verbose headers   'x-served-by': 'cache-gru7124-GRU',
+37 verbose headers   'x-cache': 'MISS',
+37 verbose headers   'x-cache-hits': '0',
+37 verbose headers   'x-timer': 'S1482428512.413472,VS0,VE828',
+37 verbose headers   vary: 'Accept-Encoding' }
+38 verbose request invalidating /Users/alan/.npm/registry.npmjs.org/vue-smooth-scroll on PUT
+39 error publish Failed PUT 403
+40 verbose stack Error: "You cannot publish over the previously published version 1.0.6." : vue-smooth-scroll
+40 verbose stack     at makeError (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:302:12)
+40 verbose stack     at CachingRegistryClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:290:14)
+40 verbose stack     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:210:14)
+40 verbose stack     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:187:22)
+40 verbose stack     at emitTwo (events.js:106:13)
+40 verbose stack     at Request.emit (events.js:191:7)
+40 verbose stack     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1044:10)
+40 verbose stack     at emitOne (events.js:96:13)
+40 verbose stack     at Request.emit (events.js:188:7)
+40 verbose stack     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:965:12)
+41 verbose statusCode 403
+42 verbose pkgid vue-smooth-scroll
+43 verbose cwd /Users/alan/Projetos/vue-smooth-scroll
+44 error Darwin 16.0.0
+45 error argv "/usr/local/Cellar/node/6.9.1/bin/node" "/usr/local/bin/npm" "publish"
+46 error node v6.9.1
+47 error npm  v3.10.8
+48 error code E403
+49 error "You cannot publish over the previously published version 1.0.6." : vue-smooth-scroll
+50 error If you need help, you may report this error at:
+50 error     <https://github.com/npm/npm/issues>
+51 verbose exit [ 1, true ]

@@ -1,6 +1,6 @@
-# Simple Vue Smooth Scroll
+# Vue Smooth Scroll
 
-> it&#x27;s based on vue-smoothscroll https://github.com/Teddy-Zhu/vue-smoothscroll/blob/master/README.md
+> Simple vue smooth scroll based on vue-smoothscroll https://github.com/Teddy-Zhu/vue-smoothscroll/blob/master/README.md
 
 
 ## Instalation
@@ -17,6 +17,6 @@ Vue.use(vueSmoothScroll)
 
 ## Usage 
 ``` html
-<a href="#div-id" vue-smooth-scroll>Anchor</a> 
+<a href="#div-id" v-smooth-scroll>Anchor</a> 
 <div id="div-id"></div> 
 ```
