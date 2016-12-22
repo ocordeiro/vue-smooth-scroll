@@ -10,7 +10,7 @@ npm install --save vue-smooth-scroll
 ``` 
 
 ``` javascript
-// import on your project (872 bytes gziped)
+// import on your project (less then 1KB gziped)
 import vueSmoothScroll from 'vue-smooth-scroll'
 Vue.use(vueSmoothScroll)
 ```

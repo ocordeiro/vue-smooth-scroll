@@ -1,8 +1,9 @@
+var webpack = require('webpack')
 module.exports = {
   entry: './index.js',
   output: {
     path: './dist',
-    filename: 'vue-smooth-scroll.js',
+    filename: 'vue-smooth-scroll.min.js',
     library: 'VueSmoothScroll',
     libraryTarget: 'umd'
   },
