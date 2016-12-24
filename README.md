@@ -20,3 +20,24 @@ Vue.use(vueSmoothScroll)
 <a href="#div-id" v-smooth-scroll>Anchor</a> 
 <div id="div-id"></div> 
 ```
+
+
+### Without Browserify or Webpack
+``` html
+<body>
+  <div id="app">
+    <a href="#app" v-smooth-scroll>Anchor</a>
+  </div>
+  <script src="https://unpkg.com/vue/dist/vue.js"></script>
+  <script src="https://unpkg.com/vue-smooth-scroll@1.0.11"></script>
+  <script>
+  Vue.use(VueSmoothScroll)
+  var app = new Vue({
+    el: '#app',
+    data: {
+      message: 'Hello Vue!'
+    }
+  })
+</script>
+</body>
+```
