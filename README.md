@@ -20,6 +20,11 @@ Vue.use(vueSmoothScroll)
 <a href="#div-id" v-smooth-scroll>Anchor</a> 
 <div id="div-id"></div> 
 ```
+## Custom options 
+``` html
+<a href="#div-id" v-smooth-scroll="{ duration: 1000 }">Anchor</a> 
+<div id="div-id"></div> 
+```
 
 
 ### Without Browserify or Webpack

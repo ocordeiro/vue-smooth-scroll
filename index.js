@@ -1,7 +1,7 @@
 module.exports = {
   install: function (Vue) {
     Vue.directive('smooth-scroll', {
-      inserted: function (el) {
+      inserted: function (el, binding) {
         // Do not initialize smoothScroll when running server side, handle it in client
         // We do not want this script to be applied in browsers that do not support those
         // That means no smoothscroll on IE9 and below.
@@ -20,7 +20,11 @@ module.exports = {
           // THIS IS A BUG FROM THE BROWSERS.
           if (window.history.pushState && location.hash !== this.hash) window.history.pushState('', '', this.hash)
 
-          var duration = 500 //ms
+          // Get duration from elementen, default to 500ms
+          var duration = binding.value && binding.value.duration
+            ? binding.value["duration"]
+            : 500
+
           var clock = Date.now()
           
           // Get the top position of an element in the document
