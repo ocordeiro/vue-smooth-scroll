@@ -20,7 +20,7 @@ module.exports = {
           // THIS IS A BUG FROM THE BROWSERS.
           if (window.history.pushState && location.hash !== this.hash) window.history.pushState('', '', this.hash)
 
-          // Get duration from elementen, default to 500ms
+          // Get duration from element, default to 500ms
           var duration = binding.value && binding.value.duration
             ? binding.value["duration"]
             : 500
