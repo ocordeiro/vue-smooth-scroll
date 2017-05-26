@@ -21,8 +21,16 @@ Vue.use(vueSmoothScroll)
 <div id="div-id"></div> 
 ```
 ## Custom options 
+### Defaults
+``` js
+  {
+    duration: 500, // Animation speed
+    offset: 0, // Offset from element, you can use positive or negative values
+  }
+```
+### Example:
 ``` html
-<a href="#div-id" v-smooth-scroll="{ duration: 1000 }">Anchor</a> 
+<a href="#div-id" v-smooth-scroll="{ duration: 1000, offset: -50 }">Anchor</a> 
 <div id="div-id"></div> 
 ```
 
