@@ -25,11 +25,19 @@ module.exports = {
             ? binding.value["duration"]
             : 500
 
+          // Get offset from element, default to 0
+          var offset = binding.value && binding.value.offset
+            ? binding.value["offset"]
+            : 0
+
           var clock = Date.now()
           
           // Get the top position of an element in the document
           // return value of html.getBoundingClientRect().top ... IE : 0, other browsers : -pageYOffset
           var end = scrollTo.nodeName === 'HTML' ? -window.pageYOffset : scrollTo.getBoundingClientRect().top + window.pageYOffset
+
+          // Ajusts offset from the end
+          end += offset
 
           // we use requestAnimationFrame to be called by the browser before every repaint
           var requestAnimationFrame = window.requestAnimationFrame ||
