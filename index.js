@@ -22,12 +22,12 @@ module.exports = {
 
           // Get duration from element, default to 500ms
           var duration = binding.value && binding.value.duration
-            ? binding.value["duration"]
+            ? binding.value.duration
             : 500
 
           // Get offset from element, default to 0
           var offset = binding.value && binding.value.offset
-            ? binding.value["offset"]
+            ? binding.value.offset
             : 0
 
           var clock = Date.now()
@@ -44,7 +44,7 @@ module.exports = {
           window.mozRequestAnimationFrame || window.webkitRequestAnimationFrame ||
           function (fn) {window.setTimeout(fn, 15)}
           
-          var step = function () {
+          var step = function (duration) {
             // the time elapsed from the beginning of the scroll
             var elapsed = Date.now() - clock
             // calculate the scroll position we should be in
@@ -58,7 +58,7 @@ module.exports = {
             }
             window.scroll(0, position)
           }
-          step()
+          step(duration)
         })
       }
     })
