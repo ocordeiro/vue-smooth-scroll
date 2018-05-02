@@ -5,7 +5,7 @@ module.exports = {
         // Do not initialize smoothScroll when running server side, handle it in client
         // We do not want this script to be applied in browsers that do not support those
         // That means no smoothscroll on IE9 and below.
-        if (typeof window !== 'object' || window.pageYOffset === void 0) return
+        if (typeof window !== 'object' || window.pageYOffset === void 0 || this.hash == null) return
 
         // Attach the smoothscroll function
         el.addEventListener('click', function (ev) {
