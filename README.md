@@ -54,3 +54,10 @@ Vue.use(vueSmoothScroll)
 </script>
 </body>
 ```
+### Notice
+SmoothScroll won't work if you set `body` or `html` to `height: 100%`, if you use external css be sure to reset styles
+```css
+body, html {
+  height: auto !important;
+}
+```
